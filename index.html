@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+</head>
+<style>
+    body{
+        width: 100vw;
+        height: 300vh;
+        background-color: rgb(17, 16, 16);
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .box{
+        width: 300px;
+        height: 200px;
+        background-color:  rgb(63, 58, 58);
+        font-size: 100px;
+        display: grid;
+        place-items: center;
+    }
+</style>
+<body>
+    <div class="box" data-aos="fade-right">1</div>
+    <div class="box" data-aos="fade-left">2</div>
+    <div class="box" data-aos="fade-right">3</div>
+    <div class="box" data-aos="fade-left">4</div>
+    <div class="box" data-aos="fade-left">5</div>
+    <div class="box" data-aos="fade-right">6</div>
+    <div class="box" data-aos="fade-left">7</div>
+    <div class="box" data-aos="fade-right">8</div>
+    <div class="box" data-aos="fade-left">9</div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 170,
+        // delay:500,
+        duration: 600,
+      });
+    </script>
+</body>
+</html>
